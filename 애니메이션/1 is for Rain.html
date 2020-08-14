@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+            top: 0%;
+            left: 0%;
+        }
+        body{
+            background-color: rgba(243,251,255,1);
+        }
+        #letter{
+            font-size:  120px;
+            font-weight: bold;
+            color: rgba(18,22,26,0.7);
+            width: 120px;
+            height: 120px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            /*transform: translate(-50%,-50%);
+            */
+            margin-top: -8%;
+            margin-left: -50px;
+            opacity: 1;
+            z-index: 100;
+            font-family: Helvetica;
+        }
+        #description{
+            position: fixed;
+            width: 100%;
+            font-weight: 200;
+            color: rgba(18,22,26,0.7);
+            text-align: center;
+            bottom: 10px;
+            letter-spacing: 1px;
+            font-size: 11px;
+            font-family: Helvetica;
+
+        }
+        #animation{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            /*border: 1px solid red;*/
+        }
+        .cloud{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+           /* border: 1px solid blue;*/
+            transform: scale(0.65);
+        }
+        .cloud div{
+            width: 200px;
+            height: 200px;
+            background-color: rgba(215,216,218,1);
+            border-radius: 100%;
+            position: absolute;
+        }
+        .cloud div:nth-child(1){
+            margin-top: -100px;
+            margin-left: -100px;
+            animation: poof 5s ease-in-out -1s infinite alternate;
+            
+        }
+        .cloud div:nth-child(2){
+            margin-top: -90px;
+            margin-left: -240px;
+            animation: poof 5s ease-in-out -2s infinite alternate;
+
+        }
+        .cloud div:nth-child(3){
+            margin-top: -150px;
+            margin-left: -180px;
+            animation: poof 5s ease-in-out -3s infinite alternate;
+
+        }
+        .cloud div:nth-child(4){
+            margin-top: -150px;
+            margin-left: -60px;
+            animation: poof 5s ease-in-out -4s infinite alternate;
+
+        }
+        .cloud div:nth-child(5){
+            margin-top: -90px;
+            margin-left: -20px;
+            animation: poof 5s ease-in-out -5s infinite alternate;
+            
+        }
+        @keyframes poof{
+            100%{
+                transform: translate(-4px, -2px)
+            }
+            93%{
+                transform: translate(10px, 4px)
+            }
+            82%{
+                transform: translate(-6px, -3px)
+            }
+            74%{
+                transform: translate(10px, 8px)
+            }
+            61%{
+                transform: translate(-8px, -2px)
+            }
+            48%{
+                transform: translate(10px, 4px)
+            }
+            36%{
+                transform: translate(-6px, 4px)
+            }
+            25%{
+                transform: translate(10px, 0px)
+            }
+            15%{
+                transform: translate(-5px, -3px)
+            }
+            8%{
+                transform: translate(10px, 2px)
+            }
+            0%{
+                transform: translate(-10px, 4px)
+                               
+            }
+        }
+        .drops{
+            position: absolute;
+            /*border: 1px dotted red;*/
+            top: 50%;
+            left: 50%;
+            margin-top: 50px;
+            margin-left: -20px;
+            z-index: -1;
+        }
+        .drops div{
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: rgba(233,234,245,1);
+            border-radius: 10px;
+            margin-top: -5px;
+            margin-left: -5px;
+        }
+        .drops div:before{
+            content: "";
+            border-bottom: 20px solid rgba(233,234,245,1);
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            margin-top: -16px;
+            position: absolute;
+        }
+        .drops div:nth-child(1){
+            margin-left: -100px;
+            animation: drip 1s ease-in -0.0s infinite;
+        }
+        .drops div:nth-child(2){
+            margin-left: 100px;
+            animation: drip 1s ease-in -0.1s infinite;
+        }
+        .drops div:nth-child(3){
+            margin-left: -75px;
+            animation: drip 1s ease-in -0.02s infinite;
+        }
+        .drops div:nth-child(4){
+            margin-left: 60px;
+            animation: drip 1s ease-in -0.2s infinite;
+        }
+        .drops div:nth-child(5){
+            margin-left: -30px;
+            animation: drip 1s ease-in -0.03s infinite;
+        }
+        .drops div:nth-child(6){
+            margin-left: -20px;
+            animation: drip 1s ease-in -0.4s infinite;
+        }
+        .drops div:nth-child(7){
+            margin-left: 30px;
+            animation: drip 1s ease-in -0.5s infinite;
+        }
+        .drops div:nth-child(8){
+            margin-left: -40px;
+            animation: drip 1s ease-in -0.6s infinite;
+        }
+        .drops div:nth-child(9){
+            margin-left: 50px;
+            animation: drip 1s ease-in -0.7s infinite;
+        }
+        .drops div:nth-child(10){
+            margin-left: 65px;
+            animation: drip 1s ease-in -0.9s infinite;
+        }
+        
+        @keyframes drip{
+            100% {
+                transform: translate(0px,1000px);
+            }
+            0%{
+                transform: translate(0px,0px;)
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="letter">R</div>
+    <div id="description">is for Rain</div>
+    <div id="animation">
+       <div class="cloud">
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+       </div>
+       <div class="drops">
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+       </div>
+    </div>
+</body>
+</html>

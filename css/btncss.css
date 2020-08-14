@@ -1,0 +1,120 @@
+/*기업프로젝트에 들어가는 스타일*/
+.button { 
+  display: inline-block;
+  margin-top: 20px;
+  padding: 20px;
+  border: 0.5px solid #ADD8E6;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  transition: .3s;
+  color: #0c74af;
+}
+
+.button:after {
+  position: absolute;
+ transition: .3s;
+  content: '';
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  height: 3px;
+  background: #ADD8E6;
+    
+}
+.button:hover ,
+#myBtn:hover,
+#myBtn2:hover,
+#myBtn3:hover,
+#myBtn4:hover{  
+  cursor: pointer;}  
+.button:hover:after {  width: 100%;  left: 0;} 
+
+/* modal button */
+#myBtn{
+  position: absolute;
+  left: 300px;
+  top: 320px;
+  color: #ff6363;
+  border: #ff6363 1px solid;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: .3s;
+  background: #fff;
+  font-family: "Mukta",sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 10px;
+  min-width: 200px;
+  font-size: 1em;
+}
+#myBtn:hover,
+#myBtn2:hover,
+#myBtn3:hover,
+#myBtn4:hover{
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #ff6363;
+  color: white;
+}
+#myBtn2{
+  position: absolute;
+  left: 600px;
+  top: 320px;
+  color: #ff6363;
+  border: #ff6363 1px solid;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: .3s;
+  background: #fff;
+  font-family: "Mukta",sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 10px;
+  min-width: 200px;
+  font-size: 1em;
+}
+#myBtn3{
+  position: absolute;
+  left: 930px;
+  top: 320px;
+  color: #ff6363;
+  border: #ff6363 1px solid;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: .3s;
+  background: #fff;
+  font-family: "Mukta",sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 10px;
+  min-width: 200px;
+  font-size: 1em;
+}
+
+#myBtn4{
+  position: absolute;
+  left: 550px;
+  top: 720px;
+  color: #ff6363;
+  border: #ff6363 1px solid;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: .3s;
+  background: #fff;
+  font-family: "Mukta",sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 10px;
+  min-width: 200px;
+  font-size: 1em;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .skw-page-content{
+            display: table;
+            width: 100%;
+        }
+        .one-table,
+        .two-table,
+        .third-table,
+        .four-table
+        {
+            display: table-row;
+        }
+        .jb-table-cell {
+        display: table-cell;
+        padding: 0px 20px;
+        height: 150px;
+      }
+    </style>
+</head>
+<body>
+    <div class="skw-page-content">
+        <div class="one-table">
+            <!-- loading -->
+            <div id="loading-wrapper" onmouseover="loadingTextBlock()" onmouseout="loadingTextHide()" class="jb-table-cell">
+                <div id="loading-text"></div>
+                <div id="loading-content"></div>
+                <div id="loading-description">가상선택자 :before,:after와 <br>애니메이션 효과를 주어 만든 로딩 화면입니다.</div>
+            </div> 
+            <!-- snow -->
+            <div id="loading-wrapper" onmouseover="loadingTextBlock()" onmouseout="loadingTextHide()" class="jb-table-cell"> 
+                <div id="loading-text"></div>
+                <div id="loading-content"></div>
+                <div id="loading-description">가상선택자 :before,:after와 <br>애니메이션 효과를 주어 만든 로딩 화면입니다.</div>
+            </div>
+            <!-- icecream -->
+            <div id="loading-wrapper" onmouseover="loadingTextBlock()" onmouseout="loadingTextHide()" class="jb-table-cell">
+                <div id="loading-text"></div>
+                <div id="loading-content"></div>
+                <div id="loading-description">가상선택자 :before,:after와 <br>애니메이션 효과를 주어 만든 로딩 화면입니다.</div>
+            </div>
+        </div>
+        <!-- 버튼 세개 -->
+        <div class="two-table" >
+            <button class="myBtn jb-table-cell" id="myBtn1">Code view</button>
+            <button class="myBtn jb-table-cell" id="myBtn2">Code view</button>
+            <button class="myBtn jb-table-cell" id="myBtn3">Code view</button>
+        </div>
+        <div class="third-table">
+            <!-- snow -->
+            <div id="loading-wrapper" onmouseover="loadingTextBlock()" onmouseout="loadingTextHide()" class="jb-table-cell">
+                <div id="loading-text"></div>
+                <div id="loading-content"></div>
+                <div id="loading-description">가상선택자 :before,:after와 <br>애니메이션 효과를 주어 만든 로딩 화면입니다.</div>
+            </div>
+        </div>
+        <div class="four-table">
+            <button class="myBtn jb-table-cell" id="myBtn4">Code view</button>
+        </div>
+    </div>
+</body>
+</html>
