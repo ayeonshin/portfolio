@@ -35,7 +35,7 @@
 #myBtn{
   position: absolute;
   left: 300px;
-  top: 320px;
+  top: 380px;
   color: #ff6363;
   border: #ff6363 1px solid;
   border-radius: 10px;
@@ -63,7 +63,7 @@
 #myBtn2{
   position: absolute;
   left: 600px;
-  top: 320px;
+  top: 380px;
   color: #ff6363;
   border: #ff6363 1px solid;
   border-radius: 10px;
@@ -82,7 +82,7 @@
 #myBtn3{
   position: absolute;
   left: 930px;
-  top: 320px;
+  top: 380px;
   color: #ff6363;
   border: #ff6363 1px solid;
   border-radius: 10px;
@@ -102,7 +102,7 @@
 #myBtn4{
   position: absolute;
   left: 550px;
-  top: 720px;
+  top: 800px;
   color: #ff6363;
   border: #ff6363 1px solid;
   border-radius: 10px;
