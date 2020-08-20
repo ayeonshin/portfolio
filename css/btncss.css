@@ -27,7 +27,9 @@
 #myBtn:hover,
 #myBtn2:hover,
 #myBtn3:hover,
-#myBtn4:hover{  
+#myBtn4:hover,
+.slide_btn:hover
+{  
   cursor: pointer;}  
 .button:hover:after {  width: 100%;  left: 0;} 
 
@@ -117,4 +119,19 @@
   padding: 10px;
   min-width: 200px;
   font-size: 1em;
+}
+.slide_btn{
+  display: inline-block;
+  border: 0.5px solid rgb(175, 175, 175);
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  top: 40px;
+  left: 47%;
+  overflow: hidden;
+  transition: .3s;
+  color: rgba(0,0,0,0.8);
+  padding: 10px;
+  font-family: 'Jua', sans-serif;
+  
 }

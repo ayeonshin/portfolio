@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./css/btncss.css">
     <link rel="stylesheet" href="./css/animation.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
 
 
@@ -248,20 +247,34 @@
                         <!-- Full-width images with number and caption text -->
                         <div class="mySlides fade">
                           <div class="numbertext">1 / 3</div>
-                          <img src="./images/snow-bg.png" style="width:100%">
-                          <div class="text">Caption Text</div>
+                          <img src="./images/slide1.png" class="captionimg">
+                          <!-- <div class="captiontext" > [ 가온미디어 홈페이지 Redesign] </div> -->
+                          <div class="myBtn slide_btn"> 상세보기 </div> 
+                          <!-- 상세보기 모달 넣기 start-->
+                          <div id="myModal" class="modal jb-table-cell">
+
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                             
+                              <span class="close">&times;</span>
+                             <!-- 총 이미지 넣기  -->
+                            
+                            </div>
+                          
+                          </div>
+                          <!-- 상세보기 모달 end -->
                         </div>
                       
                         <div class="mySlides fade">
                           <div class="numbertext">2 / 3</div>
                           <img src="./images/skilbg.png" style="width:100%">
-                          <div class="text">Caption Two</div>
+                          <div class="captiontext">Caption Two</div>
                         </div>
                       
                         <div class="mySlides fade">
                           <div class="numbertext">3 / 3</div>
                           <img src="./images/christmas-tree.png" style="width:100%">
-                          <div class="text">Caption Three</div>
+                          <div class="captiontext">Caption Three</div>
                         </div>
                       
                         <!-- Next and previous buttons -->
@@ -340,9 +353,9 @@
                 </div>
                 <!-- 버튼 세개 -->
                 <div class="two-table" >
-                    <button class="myBtn jb-table-cell" id="myBtn">Code view</button>
-                    <button class="myBtn jb-table-cell" id="myBtn2">Code view</button>
-                    <button class="myBtn jb-table-cell" id="myBtn3">Code view</button>
+                    <button class="myBtn jb-table-cell" id="myBtn">Code View</button>
+                    <button class="myBtn jb-table-cell" id="myBtn2">Code View</button>
+                    <button class="myBtn jb-table-cell" id="myBtn3">Code View</button>
                 </div>
                 <div class="two-modal-table">
                     <div id="myModal" class="modal jb-table-cell">
