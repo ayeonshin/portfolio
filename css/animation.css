@@ -530,38 +530,38 @@
     100% {transform: translate(-40px, -30px) rotate(5deg)}
 }
 /* third snow-wrapper */
-#snow-wrapper {
+/* #snow-wrapper {
     position: absolute;
     top: 450px;
     left: 300px;
     width: 700px;
     height: 270px;
     
-    /* background: rgba(255,114,96,1);
+    background: rgba(255,114,96,1);
   background: linear-gradient(45deg, 
     rgba(255,114,96,1) 0%, 
     rgba(255,114,96,1) 14%, 
     rgba(252,210,113,1) 54%, 
     rgba(252,210,113,1) 61%, 
     rgba(102,176,102,1) 93%, 
-    rgba(96,135,134,1) 100%); */
-}
+    rgba(96,135,134,1) 100%);
+} */
 
 
 .third-wrapper {
   width: 100%;
-  perspective: 800;
+  /* perspective: 50; */
 }
 
 .cube {
   position: relative;
   top: 160px;
   margin: 0 auto;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
 
-  animation : spin 5s infinite linear;
-  transform-style: preserve-3d;
+ animation : spin 5s infinite linear;
+  transform-style: preserve-3d; 
 }
 
 @keyframes spin {
@@ -571,8 +571,8 @@
 
 .cube > div {
   position: absolute;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   border: 1px solid #333;
   opacity: .8;
 }
@@ -583,32 +583,32 @@
 }
 
 .one { 
-  transform: rotateX(90deg) translateZ(100px); 
+  transform: rotateX(90deg) translateZ(75px); 
   background-color: #E3493B;
 }
 
 .two { 
-  transform: translateZ(100px); 
+  transform: translateZ(75px); 
   background-color: #23B5AF;
 }
 
 .three { 
-  transform: rotateY(90deg) translateZ(100px); 
+  transform: rotateY(90deg) translateZ(75px); 
   background-color: #E8487F;
 }
 
 .four { 
-  transform: rotateY(180deg) translateZ(100px); 
+  transform: rotateY(180deg) translateZ(75px); 
   background-color: #28B78D;
 }
 
 .five { 
-  transform: rotateY(-90deg) translateZ(100px); 
+  transform: rotateY(-90deg) translateZ(75px); 
   background-color: #FF5B00;
 }
 
 .six { 
-  transform: rotateX(-90deg) translateZ(100px); 
+  transform: rotateX(-90deg) translateZ(75px); 
   background-color: #FEEB51;
 }
 
