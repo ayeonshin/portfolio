@@ -29,11 +29,11 @@
     top: 100px;
 }
 
-#loading-wrapper:hover {
+/* #loading-wrapper:hover {
     background-color: #ff6363;
     border-radius: 10px;
 
-}
+} */
 
 #loading-description {
     display: none;
